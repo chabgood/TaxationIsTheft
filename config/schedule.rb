@@ -8,7 +8,7 @@
 set :output, "/tmp/cron_log.log"
 #
  every 1.minute do
-   command "ruby ../twit.rb"
+   command "ruby twit.rb"
 #   runner "MyModel.some_method"
 #   rake "some:great:rake:task"
  end
