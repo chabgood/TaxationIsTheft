@@ -12,8 +12,9 @@ class Twit
   end
 
   def run
+    tax = 'taxationistheft'.chars.map { |c| (rand 2) == 0 ? c : c.upcase }.join
     client.update("@realDonaldTrump
-      #taxationistheft")
+      ##{tax}")
   end
 end
 twit = Twit.new
