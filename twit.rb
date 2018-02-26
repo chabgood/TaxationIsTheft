@@ -13,7 +13,7 @@ class Twit
 
   def run
     tax = 'taxationistheft'.chars.map { |c| (rand 2) == 0 ? c : c.upcase }.join
-    client.update("@realDonaldTrump
+    client.update("@realDonaldTrump @NancyPelosi @SenSanders
       ##{tax}")
   end
 end
